@@ -2,16 +2,6 @@
 #include <array>
 using namespace std;
 
-// int find_min_element(int arr[], int size) {
-//     int target = arr[0];
-//     for (int i = 0; i < size; i++) {
-//         if (target > arr[i]) {
-//             target = arr[i];
-//         }
-//     } 
-//     return target;
-// }
-
 int main() {
     int n;
     cin >> n;

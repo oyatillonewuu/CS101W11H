@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
 
-    // Algorithm: calculate the sum of all array elements
-    // Using loop, divide sum - loop_target_num by each element. If there is 
-    // any element that the sum - loop_target_num is divisible by, then the target is this.
+    // Algorithm: use nested loops
+    // If first_loop_element == second_loop_element: skip
+    // If second_loop_element % first_loop_element != 0: break (case failure)
+    // Else: loop arrives successfully at the end and the target is found
     
     int n;
     cin >> n;
@@ -27,10 +28,12 @@ int main() {
             if (index1 == index2) {
                 continue;
             }
-            if (nums[index2] % nums[index1] != 0) { // if at least one number is not divisible, then case fails => break 
+            if (nums[index2] % nums[index1] != 0) { 
+                // if at least one number is not divisible, then case fails => break 
                 break;
             }
-            if ((index2  == n - 1) || (index1 == n - 1 && index2 == n - 2)) { // this case works when iteration arrives at the last elements, meaning success
+            if ((index2  == n - 1) || (index1 == n - 1 && index2 == n - 2)) { 
+                // this case works when iteration arrives at the last elements, meaning success
                 target_element = nums[index1];
             }
         }
