@@ -17,27 +17,27 @@ int main() {
         }
     }
 
-    std::cout << uppercount;
+    cout << uppercount << " ";
 
     if (uppercount != 0) {
         for (char target: inp_str) {
             if (target >= 65 && target <= 90) {
-                std::cout << " " << target;
+                cout << target << " ";
             }
         }
     }
 
-    std::cout << " " << endl << lowercount;
+    cout << endl << lowercount << " ";
 
     if (lowercount != 0) {
         for (char target: inp_str) {
             if (target >= 97 && target <= 122) {
-                std::cout << " " << target;
+                cout << target << " ";
             }
         }
     }
 
-    std:cout << " ";
+    
 
     return 0;
 }
