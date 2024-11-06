@@ -27,7 +27,7 @@ int main() {
         }
     }
 
-    std::cout << endl << lowercount;
+    std::cout << " " << endl << lowercount;
 
     if (lowercount != 0) {
         for (char target: inp_str) {
@@ -36,6 +36,8 @@ int main() {
             }
         }
     }
+
+    std:cout << " ";
 
     return 0;
 }
